@@ -11,7 +11,7 @@
 body {
     font-family: NunitoRegular, sans-serif;
     font-weight: bold;
-    background: linear-gradient(to left, #F8F8FA 50%, #FFFFFB 50%);
+    background: linear-gradient(to left, #f3f5f5 50%, #f5f5ee 50%);
 }
 
 .container {
@@ -51,14 +51,14 @@ body {
 .form__text {
     font-size: 22px;
     line-height: 27px;
-    color: #636363;
+    color: #757474;
     margin-bottom: 69px;
 }
 
 .form__label {
     font-size: 16px;
     line-height: 25px;
-    color: #C6C6C4;
+    color: #adadac;
 }
 
 .form__input {
@@ -66,7 +66,7 @@ body {
     width: 453px;
     box-sizing: border-box;
     border: 1px solid transparent;
-    border-bottom: 1px solid #C6C6C4;
+    border-bottom: 1px solid #d2d2d0;
     padding: 3px 0;
     color: #323232;
     margin-bottom: 20px;
@@ -94,9 +94,9 @@ body {
 }
 
 .button {
-    background: #DD3142;
+    background: #d72d3e;
     box-sizing: border-box;
-    border: 1px solid #DD3142;
+    border: 1px solid #e13244;
     border-radius: 40px;
     font-family: Nunito, sans-serif;
     font-size: 20px;
@@ -143,11 +143,11 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    background: linear-gradient(to left, #F8F8FA 50%, #FFFFFB 50%);
+    background: linear-gradient(to left, #f3f3fa 50%, #fdfdf6 50%);
     padding: 10px;
     border-radius: 30px;
     max-width: 500px;
-    box-shadow: 0 0 20px #DD3142;
+    box-shadow: 0 0 20px #e33546;
     top: 35%;
 }
 
@@ -156,7 +156,7 @@ body {
     top: 0;
     right: 15px;
     cursor: pointer;
-    color: #636363;
+    color: #575757;
     font-size: 30px;
 }
 
@@ -164,7 +164,7 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 27px;
-    color: #636363;
+    color: #7a7a7a;
     margin: 25px 0;
 }
 
