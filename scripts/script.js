@@ -102,3 +102,5 @@ window.onload = function () {
     popupButton.addEventListener('click', fn);
     linkHaveAnAccount.addEventListener('click', fn);
 }
+
+console.log('По заданию написать вывод какого-нибудь сообщения в консоль.');
