@@ -1,173 +1,184 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-    font-family: 'NunitoRegular';
-    src: url("../fonts/Nunito-Regular.ttf");
+  font-family: 'NunitoRegular';
+  src: url("../fonts/Nunito-Regular.ttf");
 }
 
 body {
-    font-family: NunitoRegular, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(to left, #e4efef 50%, #e0e0be 50%);
+  font-family: NunitoRegular, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(to left, #e4efef 50%, #e0e0be 50%);
 }
 
 .container {
-    max-width: 1091px;
-    margin: 0 auto;
+  max-width: 1091px;
+  margin: 0 auto;
 }
 
 .header .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0 118px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 118px 0;
 }
 
 .header__image {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .main .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form {
-    margin-right: 85px;
-    margin-left: 8px;
+  margin-right: 85px;
+  margin-left: 8px;
 }
 
 .form__title {
-    font-size: 36px;
-    line-height: 49px;
-    color: #000000;
-    margin-bottom: 14px;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+  margin-bottom: 14px;
 }
 
-.form__text {
-    font-size: 22px;
-    line-height: 27px;
-    color: rgba(32, 93, 78, 0.42);
-    margin-bottom: 69px;
+.form__label.form__text {
+  font-size: 22px;
+  line-height: 27px;
+  color: rgba(32, 93, 78, 0.42);
+  margin-bottom: 69px;
 }
 
 .form__label {
-    font-size: 16px;
-    line-height: 25px;
-    color: #000000;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
 .form__input {
-    display: block;
-    width: 453px;
-    box-sizing: border-box;
-    border: 1px solid transparent;
-    border-bottom: 1px solid #d2d2d0;
-    padding: 3px 0;
-    color: #323232;
-    margin-bottom: 20px;
-    outline: none;
-    font-family: NunitoRegular, sans-serif;
-    font-size: 20px;
-    line-height: 27px;
+  display: block;
+  width: 453px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #d2d2d0;
+  padding: 3px 0;
+  color: #323232;
+  margin-bottom: 20px;
+  outline: none;
+  font-family: NunitoRegular, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
 }
 
 .form__input-password {
-    margin-bottom: 31px;
+  margin-bottom: 31px;
 }
 
 .form__checkbox {
-    margin-right: 7px;
-    margin-left: 2px;
+  margin-right: 7px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.error-input {
+  display: none;
+  box-sizing: border-box;
+  color: red;
+  font-size: 16px;
+  text-align: justify;
 }
 
 .form__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    margin-left: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 7px;
 }
 
 .button {
-    background: #b49266;
-    box-sizing: border-box;
-    border: 1px solid #ef09a4;
-    border-radius: 40px;
-    font-family: Nunito, sans-serif;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
-    width: 210px;
-    padding: 20px 0;
-    cursor: pointer;
+  background: #b49266;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  width: 210px;
+  padding: 20px 0;
+  cursor: pointer;
 }
 
 .account {
-    text-align: center;
-    margin-top: 44px;
+  text-align: center;
+  margin-top: 44px;
 }
 
 .account__link {
-    text-decoration: none;
-    font-family: Nunito, sans-serif;
-    font-size: 16px;
-    line-height: 27px;
-    color: #ff0000;
-    margin-left: 14px;
+  text-decoration: none;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ff0000;
+  margin-left: 14px;
 }
 
 .form__image {
-    max-width: 543px;
-    margin-bottom: 77px;
-    margin-left: 11px;
+  max-width: 543px;
+  margin-bottom: 77px;
+  margin-left: 11px;
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .popup .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    background: linear-gradient(to left, #f3f3fa 50%, #fdfdf6 50%);
-    padding: 10px;
-    border-radius: 30px;
-    max-width: 500px;
-    box-shadow: 0 0 20px #ff0bf6;
-    top: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(to left, #f3f3fa 50%, #fdfdf6 50%);
+  padding: 10px;
+  border-radius: 30px;
+  max-width: 500px;
+  box-shadow: 0 0 20px #ff0bf6;
+  top: 35%;
 }
 
 .popup-close {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    cursor: pointer;
-    color: #575757;
-    font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+  color: #575757;
+  font-size: 30px;
 }
 
 .popup-text {
-    text-align: center;
-    font-size: 22px;
-    line-height: 27px;
-    color: #7a7a7a;
-    margin: 25px 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 27px;
+  color: #7a7a7a;
+  margin: 25px 0;
 }
 
 .popup.open {
-    display: block;
+  display: block;
 }
