@@ -60,8 +60,18 @@ window.onload = function () {
 
   // Проверка присутствия в массиве
   function loginUser() {
+    resetInputBorders();
+    hideErrorInputs();
+
     const username = inputUserName.value.trim();
     const password = inputPassword.value.trim();
+
+    if (!username) {
+      showError(inputUserName, 'Пожалуйста, заполните поле "Your username"');
+    } else if (!password) {
+      showError(inputPassword, 'Пожалуйста, заполните поле "Password"');
+      return;
+    }
 
     if (username && password) {
       const users = clients.filter(user => user.userName === username);
@@ -154,8 +164,8 @@ window.onload = function () {
   let linkHaveAnAccount = document.getElementById('account__link');
 
   function fn() {
-    resetInputBorders();
-    hideErrorInputs();
+    // resetInputBorders();
+    // hideErrorInputs();
 
     //Очистка формы
     document.querySelector('form').reset();
@@ -176,7 +186,7 @@ window.onload = function () {
     buttonSubmit.innerText = 'Sign In';
 
     //Обработка события
-    buttonSubmit.addEventListener('click', loginUser);
+    buttonSubmit.onclick = loginUser;
 
     //Замена текста на Registration
     linkHaveAnAccount.innerText = 'Registration';
